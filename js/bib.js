@@ -1,357 +1,315 @@
-const bib = (function () {
-
-    var entries = readBibtex();
-    if (!entries || Object.keys(entries).length === 0) {
-        if (!electron) {
-            entries = generatedBibEntries;
-        } else {
-            console.error('Could not load bibliography: unknown reason. Please check if file is UTF8 encoded.');
-        }
+const generatedBibEntries = {
+    "Agrawal2022": {
+        "abstract": "",
+        "author": "Agrawal, Kushagra and Alladi, Tejasvi and Agrawal, Ayush and Chamola, Vinay and Benslimane, Abderrahim",
+        "doi": "10.1109/tits.2022.3146024",
+        "issn": "1558-0016",
+        "journal": "IEEE Transactions on Intelligent Transportation Systems",
+        "month": "Nov",
+        "number": "11",
+        "pages": "22596-22606",
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "series": "",
+        "title": "NovelADS: A Novel Anomaly Detection System for Intra-Vehicular Networks",
+        "type": "article",
+        "url": "http://dx.doi.org/10.1109/TITS.2022.3146024",
+        "volume": "23",
+        "year": "2022"
+    },
+    "Ahmed2023": {
+        "abstract": "",
+        "author": "Ahmed, Imran and Jeon, Gwanggil and Ahmad, Awais",
+        "doi": "10.1109/mce.2021.3139170",
+        "issn": "2162-2256",
+        "journal": "IEEE Consumer Electronics Magazine",
+        "month": "Jan",
+        "number": "1",
+        "pages": "117-123",
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "series": "",
+        "title": "Deep Learning-Based Intrusion Detection System for Internet of Vehicles",
+        "type": "article",
+        "url": "http://dx.doi.org/10.1109/MCE.2021.3139170",
+        "volume": "12",
+        "year": "2023"
+    },
+    "AlJarrah2019": {
+        "abstract": "",
+        "author": "Al-Jarrah, Omar Y. and Maple, Carsten and Dianati, Mehrdad and Oxtoby, David and Mouzakitis, Alex",
+        "doi": "10.1109/access.2019.2894183",
+        "issn": "2169-3536",
+        "journal": "IEEE Access",
+        "pages": "21266-21289",
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "series": "",
+        "title": "Intrusion Detection Systems for Intra-Vehicle Networks: A Review",
+        "type": "article",
+        "url": "http://dx.doi.org/10.1109/ACCESS.2019.2894183",
+        "volume": "7",
+        "year": "2019"
+    },
+    "AlJarrah2023": {
+        "abstract": "",
+        "author": "Al-Jarrah, Omar Y. and Haloui, Karim El and Dianati, Mehrdad and Maple, Carsten",
+        "doi": "10.1109/ojvt.2023.3237802",
+        "issn": "2644-1330",
+        "journal": "IEEE Open Journal of Vehicular Technology",
+        "pages": "271-280",
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "series": "",
+        "title": "A Novel Detection Approach of Unknown Cyber-Attacks for Intra-Vehicle Networks Using Recurrence Plots and Neural Networks",
+        "type": "article",
+        "url": "http://dx.doi.org/10.1109/OJVT.2023.3237802",
+        "volume": "4",
+        "year": "2023"
+    },
+    "Aldhyani2022": {
+        "abstract": "",
+        "author": "Aldhyani, Theyazn H. H. and Alkahtani, Hasan",
+        "doi": "10.3390/s22010360",
+        "issn": "1424-8220",
+        "journal": "Sensors",
+        "month": "Jan",
+        "number": "1",
+        "pages": "360",
+        "publisher": "MDPI AG",
+        "series": "",
+        "title": "Attacks to Automatous Vehicles: A Deep Learning Algorithm for Cybersecurity",
+        "type": "article",
+        "url": "http://dx.doi.org/10.3390/s22010360",
+        "volume": "22",
+        "year": "2022"
+    },
+    "Alkhatib2021": {
+        "abstract": "",
+        "author": "Alkhatib, Natasha and Ghauch, Hadi and Danger, Jean-Luc",
+        "booktitle": "2021 IEEE 12th Annual Information Technology, Electronics and Mobile Communication Conference (IEMCON)",
+        "doi": "10.1109/iemcon53756.2021.9623129",
+        "month": "Oct",
+        "pages": "954-962",
+        "publisher": "IEEE",
+        "series": "",
+        "title": "SOME/IP Intrusion Detection using Deep Learning-based Sequential Models in Automotive Ethernet Networks",
+        "type": "inproceedings",
+        "url": "http://dx.doi.org/10.1109/IEMCON53756.2021.9623129",
+        "year": "2021"
+    },
+    "Alkhatib2022": {
+        "abstract": "",
+        "author": "Alkhatib, Natasha and Mushtaq, Maria and Ghauch, Hadi and Danger, Jean-Luc",
+        "booktitle": "2022 IEEE Intelligent Vehicles Symposium (IV)",
+        "doi": "10.1109/iv51971.2022.9827285",
+        "month": "June",
+        "pages": "1731-1738",
+        "publisher": "IEEE",
+        "series": "",
+        "title": "Unsupervised Network Intrusion Detection System for AVTP in Automotive Ethernet Networks",
+        "type": "inproceedings",
+        "url": "http://dx.doi.org/10.1109/IV51971.2022.9827285",
+        "year": "2022"
+    },
+    "Alqahtani2022": {
+        "abstract": "",
+        "author": "Alqahtani, Hamed and Kumar, Gulshan",
+        "doi": "10.1016/j.compeleceng.2022.108447",
+        "issn": "0045-7906",
+        "journal": "Computers and Electrical Engineering",
+        "month": "Dec",
+        "pages": "108447",
+        "publisher": "Elsevier BV",
+        "series": "",
+        "title": "A deep learning-based intrusion detection system for in-vehicle networks",
+        "type": "article",
+        "url": "http://dx.doi.org/10.1016/j.compeleceng.2022.108447",
+        "volume": "104",
+        "year": "2022"
+    },
+    "Ashraf2021": {
+        "abstract": "",
+        "author": "Ashraf, Javed and Bakhshi, Asim D. and Moustafa, Nour and Khurshid, Hasnat and Javed, Abdullah and Beheshti, Amin",
+        "doi": "10.1109/tits.2020.3017882",
+        "issn": "1558-0016",
+        "journal": "IEEE Transactions on Intelligent Transportation Systems",
+        "month": "July",
+        "number": "7",
+        "pages": "4507-4518",
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "series": "",
+        "title": "Novel Deep Learning-Enabled LSTM Autoencoder Architecture for Discovering Anomalous Events From Intelligent Transportation Systems",
+        "type": "article",
+        "url": "http://dx.doi.org/10.1109/TITS.2020.3017882",
+        "volume": "22",
+        "year": "2021"
+    },
+    "Avatefipour2019": {
+        "abstract": "",
+        "author": "Avatefipour, Omid and Al-Sumaiti, Ameena Saad and El-Sherbeeny, Ahmed M. and Awwad, Emad Mahrous and Elmeligy, Mohammed A. and Mohamed, Mohamed A. and Malik, Hafiz",
+        "doi": "10.1109/access.2019.2937576",
+        "issn": "2169-3536",
+        "journal": "IEEE Access",
+        "pages": "127580-127592",
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "series": "",
+        "title": "An Intelligent Secured Framework for Cyberattack Detection in Electric Vehicles\u2019 CAN Bus Using Machine Learning",
+        "type": "article",
+        "url": "http://dx.doi.org/10.1109/ACCESS.2019.2937576",
+        "volume": "7",
+        "year": "2019"
+    },
+    "Cheng2023": {
+        "abstract": "",
+        "author": "Cheng, Pengzhou and Han, Mu and Liu, Gongshen",
+        "doi": "10.1016/j.future.2022.10.020",
+        "issn": "0167-739X",
+        "journal": "Future Generation Computer Systems",
+        "month": "Mar",
+        "pages": "266-281",
+        "publisher": "Elsevier BV",
+        "series": "",
+        "title": "DESC-IDS: Towards an efficient real-time automotive intrusion detection system based on deep evolving stream clustering",
+        "type": "article",
+        "url": "http://dx.doi.org/10.1016/j.future.2022.10.020",
+        "volume": "140",
+        "year": "2023"
+    },
+    "Cherdo2023": {
+        "abstract": "",
+        "author": "Cherdo, Yann and Miramond, Benoit and Pegatoquet, Alain and Vallauri, Alain",
+        "doi": "10.3390/s23115013",
+        "issn": "1424-8220",
+        "journal": "Sensors",
+        "month": "May",
+        "number": "11",
+        "pages": "5013",
+        "publisher": "MDPI AG",
+        "series": "",
+        "title": "Unsupervised Anomaly Detection for Cars CAN Sensors Time Series Using Small Recurrent and Convolutional Neural Networks",
+        "type": "article",
+        "url": "http://dx.doi.org/10.3390/s23115013",
+        "volume": "23",
+        "year": "2023"
+    },
+    "Cuzzocrea2020": {
+        "abstract": "",
+        "author": "Cuzzocrea, Alfredo and Mercaldo, Francesco and Martinelli, Fabio",
+        "doi": "10.1016/j.procs.2020.09.203",
+        "issn": "1877-0509",
+        "journal": "Procedia Computer Science",
+        "pages": "2999-3008",
+        "publisher": "Elsevier BV",
+        "series": "",
+        "title": "A Deep-Learning-Based Framework for Supporting Analysis and Detection of Attacks on CAN Buses",
+        "type": "article",
+        "url": "http://dx.doi.org/10.1016/j.procs.2020.09.203",
+        "volume": "176",
+        "year": "2020"
+    },
+    "Desta2020a": {
+        "abstract": "",
+        "author": "Desta, Araya Kibrom and Ohira, Shuji and Arai, Ismail and Fujikawa, Kazutoshi",
+        "doi": "10.2197/ipsjjip.28.611",
+        "issn": "1882-6652",
+        "journal": "Journal of Information Processing",
+        "number": "0",
+        "pages": "611-622",
+        "publisher": "Information Processing Society of Japan",
+        "series": "",
+        "title": "Long Short-Term Memory Networks for In-Vehicle Networks Intrusion Detection Using Reverse Engineered Automotive Packets",
+        "type": "article",
+        "url": "http://dx.doi.org/10.2197/ipsjjip.28.611",
+        "volume": "28",
+        "year": "2020"
+    },
+    "Desta2020b": {
+        "abstract": "",
+        "author": "Desta, Araya Kibrom and Ohira, Shuji and Arai, Ismail and Fujikawa, Kazutoshi",
+        "booktitle": "2020 30th International Telecommunication Networks and Applications Conference (ITNAC)",
+        "doi": "10.1109/itnac50341.2020.9315024",
+        "month": "Nov",
+        "pages": "1-7",
+        "publisher": "IEEE",
+        "series": "",
+        "title": "MLIDS: Handling Raw High-Dimensional CAN Bus Data Using Long Short-Term Memory Networks for Intrusion Detection in In-Vehicle Networks",
+        "type": "inproceedings",
+        "url": "http://dx.doi.org/10.1109/ITNAC50341.2020.9315024",
+        "year": "2020"
+    },
+    "Desta2022": {
+        "abstract": "",
+        "author": "Desta, Araya Kibrom and Ohira, Shuji and Arai, Ismail and Fujikawa, Kazutoshi",
+        "doi": "10.1016/j.vehcom.2022.100470",
+        "issn": "2214-2096",
+        "journal": "Vehicular Communications",
+        "month": "June",
+        "pages": "100470",
+        "publisher": "Elsevier BV",
+        "series": "",
+        "title": "Rec-CNN: In-vehicle networks intrusion detection using convolutional neural networks trained on recurrence plots",
+        "type": "article",
+        "url": "http://dx.doi.org/10.1016/j.vehcom.2022.100470",
+        "volume": "35",
+        "year": "2022"
+    },
+    "Dixit2022": {
+        "abstract": "",
+        "author": "Dixit, Palak and Bhattacharya, Pronaya and Tanwar, Sudeep and Gupta, Rajesh",
+        "doi": "10.1111/exsy.12754",
+        "issn": "1468-0394",
+        "journal": "Expert Systems",
+        "month": "June",
+        "number": "5",
+        "pages": "12754",
+        "publisher": "Wiley",
+        "series": "",
+        "title": "Anomaly detection in autonomous electric vehicles using AI techniques: A comprehensive survey",
+        "type": "article",
+        "url": "http://dx.doi.org/10.1111/exsy.12754",
+        "volume": "39",
+        "year": "2022"
+    },
+    "Fowler2019": {
+        "abstract": "",
+        "author": "Fowler, Daniel S. and Bryans, Jeremy and Cheah, Madeline and Wooderson, Paul and Shaikh, Siraj A.",
+        "booktitle": "2019 IEEE 19th International Conference on Software Quality, Reliability and Security Companion (QRS-C)",
+        "doi": "10.1109/qrs-c.2019.00015",
+        "month": "July",
+        "pages": "1-8",
+        "publisher": "IEEE",
+        "series": "",
+        "title": "A Method for Constructing Automotive Cybersecurity Tests, a CAN Fuzz Testing Example",
+        "type": "inproceedings",
+        "url": "http://dx.doi.org/10.1109/QRS-C.2019.00015",
+        "year": "2019"
+    },
+    "Han2021": {
+        "abstract": "",
+        "author": "Han, Mu and Cheng, Pengzhou and Ma, Shidian",
+        "doi": "10.1016/j.vehcom.2021.100374",
+        "issn": "2214-2096",
+        "journal": "Vehicular Communications",
+        "month": "Oct",
+        "pages": "100374",
+        "publisher": "Elsevier BV",
+        "series": "",
+        "title": "PPM-InVIDS: Privacy protection model for in-vehicle intrusion detection system based complex-valued neural network",
+        "type": "article",
+        "url": "http://dx.doi.org/10.1016/j.vehcom.2021.100374",
+        "volume": "31",
+        "year": "2021"
+    },
+    "Han2023": {
+        "abstract": "",
+        "author": "Han, Mee Lan and Kwak, Byung Il and Kim, Huy Kang",
+        "doi": "10.1109/tifs.2022.3221893",
+        "issn": "1556-6021",
+        "journal": "IEEE Transactions on Information Forensics and Security",
+        "pages": "411-422",
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "series": "",
+        "title": "TOW-IDS: Intrusion Detection System Based on Three Overlapped Wavelets for Automotive Ethernet",
+        "type": "article",
+        "url": "http://dx.doi.org/10.1109/TIFS.2022.3221893",
+        "volume": "18",
+        "year": "2023"
     }
-
-    return {
-        entries: entries,
-        availablePdf: electron ? [] : availablePdf,
-        availableImg: electron ? [] : availableImg,
-        stopwords: userDefinedStopwords,
-        tagCategories: electron ? generateTagCategoriesFromKeywords(entries) : userDefinedTagCategories,
-        authorizedTags: userDefinedAuthorizedTags,
-        entryDivs: {},
-        warnings: warnings.computeAllWarnings(entries),
-        nVisibleEntries: 20,
-
-        downloadBibtex: function () {
-            var blob = new Blob([this.createAllBibtex(true)]);
-            window.saveAs(blob, 'references.bib');
-        },
-
-        createBibtex: function (id, entry) {
-            var bibtex = '@' + entry['type'] + '{' + id;
-            for (var fieldName in entry) {
-                if (fieldName == 'type' || isFieldForbidden(fieldName)) {
-                    continue;
-                }
-                if (entry.hasOwnProperty(fieldName)) {
-                    bibtex += ",\n  " + fieldName + " = {" + entry[fieldName] + "}";
-                }
-            }
-            if (typeof mandatoryFields != 'undefined' && mandatoryFields) {
-                for (var i in mandatoryFields[entry["type"]]) {
-                    if (!entry.hasOwnProperty(mandatoryFields[entry["type"]][i])) {
-                        bibtex += ",\n  " + mandatoryFields[entry["type"]][i] + " = {}";
-                    }
-                }
-            }
-            return bibtex + "\n}";
-        },
-
-        createCitation: function (id) {
-            var bib = this;
-            var citation = '';
-            if (bib.parsedEntries[id]['author']) {
-                $.each(bib.parsedEntries[id]['author'], function (i, author) {
-                    var authorSplit = author.split(', ');
-                    if (authorSplit.length == 2) {
-                        author = authorSplit[0] + ', ' + authorSplit[1].replace(/[^a-z -]/gi, '').replace(/\B\w*/g, '.').replace(/([A-Z])($|([ -]))/g, '$1.$3');
-                    }
-                    if (i == bib.parsedEntries[id]['author'].length - 1 && i > 0) {
-                        citation += 'and ';
-                    }
-                    citation += latexUtil.latexToHtml(author);
-                    if (bib.parsedEntries[id]['author'].length > 2 || i > 0) {
-                        citation += ', ';
-                    } else {
-                        citation += ' ';
-                    }
-                });
-            }
-            var year = bib.entries[id]['year'];
-            if (year) {
-                citation += year + '. ';
-            }
-            if (title = bib.entries[id]['title']) {
-                citation += latexUtil.latexToHtml(title) + '. ';
-            }
-            var journal = bib.entries[id]['journal'];
-            var pages = bib.entries[id]['pages'];
-            if (journal) {
-                citation += 'In <i>' + latexUtil.latexToHtml(journal) + '</i>';
-                var volume = bib.entries[id]['volume'];
-                if (volume) {
-                    citation += ' (Vol. ' + latexUtil.latexToHtml(volume);
-                    var number = bib.entries[id]['number'];
-                    if (number) {
-                        citation += ', No. ' + latexUtil.latexToHtml(number);
-                    }
-                    if (pages) {
-                        citation += ', pp. ' + latexUtil.latexToHtml(pages);
-                    }
-                    citation += ')';
-                }
-                citation += '. ';
-            }
-            var booktitle = bib.entries[id]['booktitle'];
-            if (booktitle) {
-                citation += 'In <i>' + latexUtil.latexToHtml(booktitle) + '</i>';
-                if (pages) {
-                    citation += ' (pp. ' + latexUtil.latexToHtml(pages) + ')';
-                }
-                citation += '. ';
-            }
-            var doi = bib.entries[id]['doi'];
-            var url = bib.entries[id]['url'];
-            if (doi) {
-                citation += 'DOI: <a href="http://dx.doi.org/' + doi + '">' + doi + '</a>. ';
-            } else if (url) {
-                citation += 'URL: <a href="' + url + '">' + url + '</a>. ';
-            }
-            return citation.trim();
-        },
-
-        createAllBibtex: function (filtered) {
-            var bib = this;
-            var bibtexString = '';
-            const selectedEntries = filtered ? bib.filteredEntries : bib.entries;
-            $.each(selectedEntries, function (id, entry) {
-                var currentBibtex = "";
-                if (bib.entryDivs[id]) {
-                    bib.entryDivs[id].find(".CodeMirror-code").children().each(function () {
-                        currentBibtex += $(this).text() + "\n";
-                    });
-                }
-                if (!currentBibtex) {
-                    currentBibtex = bib.createBibtex(id, entry);
-                }
-                bibtexString += currentBibtex;
-                bibtexString += "\n\n";
-            });
-            return bibtexString;
-        },
-
-        saveBibToFile: function () {
-            require('electron').remote.getGlobal('sharedObject').bibData = this.createAllBibtex(false);
-            const ipc = require('electron').ipcRenderer;
-            ipc.send('saveFile');
-            page.notify('File saved.');
-        },
-
-        saveBibToLocalStorage: function () {
-            if (editable) {
-                localStorage.bibtexString = this.createAllBibtex(false);
-            }
-        },
-
-        addEntries: function () {
-            var bib = this;
-            var addEntriesDiv = $('<div>', {
-                id: 'add_entries',
-                title: 'Add entries',
-                text: 'Paste one or more BibTeX entries:'
-            }).appendTo($('body'));
-            var bibtexEditor = CodeMirror(addEntriesDiv.get(0), {
-                lineWrapping: true
-            });
-            var bibtexStatusDiv = $('<div>', {
-                class: 'bibtex_status'
-            }).appendTo(addEntriesDiv);
-            bibtexEditor.on('change', function (bibtexEditor) {
-                bibtexStatusDiv.empty();
-                var addButton = $('.add_entry_button');
-                var addButtonTextDiv = addButton.find('.ui-button-text');
-                try {
-                    var bibtexText = bibtexEditor.getValue();
-                    var bibtexEntries = bib.parse(bibtexText);
-                    var nEntries = Object.keys(bibtexEntries).length;
-                    if (nEntries > 0) {
-                        addButtonTextDiv.text(
-                            'add (' + nEntries + (nEntries > 1 ? ' entries)' : ' entry)')
-                        );
-                        addButton.button('enable');
-                    } else {
-                        addButtonTextDiv.text('add');
-                        addButton.button('disable');
-                    }
-                }
-                catch (err) {
-                    $('<div>', {
-                        text: err,
-                        class: 'error'
-                    }).appendTo(bibtexStatusDiv);
-                    addButton.button('disable');
-                }
-            });
-            addEntriesDiv.dialog({
-                minWidth: 832,
-                modal: true,
-                buttons: {
-                    'Add': {
-                        text: 'add',
-                        class: 'add_entry_button',
-                        disabled: true,
-                        click: function () {
-                            var bibtexText = bibtexEditor.getValue();
-                            addEntriesDiv.dialog('close');
-                            if (bibtexText != null) {
-                                var bibtexEntries = bib.parse(bibtexText);
-                                for (var entryKey in bibtexEntries) {
-                                    var bibtexEntry = bibtexEntries[entryKey];
-                                    if (bib.entries[entryKey]) {
-                                        page.notify('Entry with ID "' + entryKey + '" already exists and cannot be added to the database.');
-                                    } else {
-                                        bib.entries[entryKey] = {};
-                                        for (var key in bibtexEntry) {
-                                            var keyLower = key.toLowerCase();
-                                            bib.entries[entryKey][keyLower] = bibtexEntry[key];
-                                        }
-                                        var mandatoryFields = ['author', 'year', 'title'];
-                                        $.each(mandatoryFields, function (i, field) {
-                                            if (!bib.entries[entryKey][field]) {
-                                                bib.entries[entryKey][field] = '';
-                                            }
-                                        });
-                                        bib.warnings[entryKey] = warnings.computeWarnings(bib.entries[entryKey]);
-                                    }
-                                }
-                            }
-                            if (Object.keys(bibtexEntries).length == 1) {
-                                selectors.toggleSelector('search', Object.keys(bibtexEntries)[0]);
-                            }
-                            update();
-                        }
-                    },
-                    cancel: function () {
-                        $(this).dialog("close");
-                    }
-                }
-            });
-            bibtexEditor.focus();
-        },
-
-        parse: function (bibtexText) {
-            var bibParser = new BibtexParser();
-            bibParser.setInput(bibtexText);
-            bibParser.bibtex();
-            return bibParser.getEntries();
-        },
-
-        renameKeyword: function () {
-            var bib = this;
-            const renameDiv = $('<div>', {
-                id: 'rename',
-                title: "Rename keyword"
-            });
-            $(`<div>Please enter the keyword that should be renamed, followed by "->" and one or 
-                    more comma-separated new names of the keyword.'</div>`)
-                .appendTo(renameDiv);
-            const renameForm = $(` 
-                        <form id="rename_form">
-                            <input type="text" id="rename_query" value="keyword_old->keyword_new, keyword_new2">
-                            <input type="submit" value="rename">
-                        </form>`)
-                .appendTo(renameDiv);
-            renameForm.submit(function (event) {
-                event.preventDefault();
-                const renameQuery = $('#rename_query').val();
-                console.log(renameQuery);
-                if (renameQuery.indexOf("->") < 0) {
-                    page.notify('Wrong format of rename query: please use "->" ' +
-                        'to separate the old from the new name of the keyword.', 'error');
-                    return;
-                }
-                var keywords = $.map(renameQuery.split('->'), $.trim);
-                if (!keywords[0]) {
-                    page.notify('Wrong format of rename query: please specify the keyword you want to rename.', 'error');
-                    return;
-                }
-                if (!keywords[1]) {
-                    page.notify('Wrong format of rename query: please specify the new name of the keyword.', 'error');
-                    return;
-                }
-                var newKeywords = $.map(keywords[1].split(','), $.trim);
-                var renameCount = 0;
-                $.each(bib.filteredEntries, function (id, entry) {
-                    var keywordPos = $.inArray(keywords[0], bib.parsedEntries[id]['keywords']);
-                    if (keywordPos >= 0) {
-                        renameCount++;
-                        var keywordList = [].concat(newKeywords);
-                        var keywordListParsed = [].concat(newKeywords);
-                        $.each(bib.parsedEntries[id]['keywords'], function (i, keyword) {
-                            if (!(keyword === keywords[0]) && $.inArray(keyword, newKeywords) < 0) {
-                                keywordListParsed.push(keyword);
-                                if (keyword.indexOf('?') < 0) {
-                                    keywordList.push(keyword);
-                                }
-                            }
-                        });
-                        bib.entries[id]['keywords'] = keywordList.join(', ');
-                        bib.parsedEntries[id]['keywords'] = keywordListParsed;
-                    }
-                });
-                page.update(false);
-                page.notify('Renamed keywords of ' + renameCount + ' entries. ');
-            });
-            renameDiv.dialog({
-                minWidth: 832,
-                modal: true
-            });
-        }
-    };
-
-    function readBibtex() {
-        var bibParser = new BibtexParser();
-        if (electron) {
-            try {
-                bibParser.setInput(require('electron').remote.getGlobal('sharedObject').bibData);
-                bibParser.bibtex();
-                return bibParser.getEntries();
-            } catch (err) {
-                console.error(err);
-                alert('Could not load bibliography: \n\n' + err);
-            }
-            return null;
-        } else {
-            var loadFromLocalStorage = browserUtil.getUrlParameter('loadFromLocalStorage') === 'true';
-            if (editable && loadFromLocalStorage && localStorage.bibtexString) {
-                try {
-                    bibParser.setInput(localStorage.bibtexString);
-                    bibParser.bibtex();
-                    return bibParser.getEntries();
-                } catch (err) {
-                    console.error(err);
-                    console.log(localStorage.bibtexString);
-                    alert('Could not load bibliography from local storage, loaded default instead (see console for details and locally stored bibliography): \n\n' + err.substring(0, 200));
-                }
-                return null;
-            }
-        }
-    }
-
-    function generateTagCategoriesFromKeywords(entries) {
-        const tagCategories = {};
-        Object.keys(entries).forEach(id => {
-            bibUtil.parseField(entries[id].keywords, 'keywords', tagCategories).forEach(keyword => {
-                if (keyword.indexOf(':') > 0) {
-                    const category = keyword.split(':')[0];
-                    if (!tagCategories[category]) {
-                        tagCategories[category] = {};
-                    }
-                }
-            });
-        });
-        return tagCategories;
-    }
-
-    function isFieldForbidden(fieldName) {
-        const forbiddenFields = []; //['referencedby', 'titlesafe', 'references'];
-        if (typeof forbiddenFields === 'undefined' || !forbiddenFields) {
-            return false;
-        }
-        for (var i in forbiddenFields) {
-            if (fieldName.indexOf(forbiddenFields[i]) == 0) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-})();
+};
