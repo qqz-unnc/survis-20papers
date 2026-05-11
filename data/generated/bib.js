@@ -1,32 +1,19 @@
 /**
  * Generated BibTeX entries for academic references related to in-vehicle network security
- * This file contains structured bibliographic data for publications focused on:
- * - Intrusion Detection Systems (IDS) for automotive networks (CAN bus/Ethernet)
- * - Cybersecurity of autonomous/electric vehicles
- * - Machine/deep learning for automotive anomaly/cyberattack detection
+ * This file is structured to be fully compatible with the SurVis visualization tool.
  * 
- * Entry Key Format: AuthorLastNameYear (e.g., Agrawal2022 = Agrawal et al., 2022)
- * Core Field Definitions:
- * - abstract: Publication abstract (empty in this dataset)
- * - author: Authors in "Last, First and Last, First" format
- * - doi: Digital Object Identifier (persistent link to the publication)
- * - issn: International Standard Serial Number (journal/proceedings identifier)
- * - journal: Journal name (for "article" type entries)
- * - booktitle: Conference proceedings title (for "inproceedings" type entries)
- * - month: Publication month (abbreviated/full name)
- * - number: Journal issue number
- * - pages: Page range of the publication
- * - publisher: Publisher of the journal/conference
- * - series: Publication series (empty for most entries here)
- * - title: Publication title
- * - type: Publication type (article = journal article; inproceedings = conference paper)
- * - url: DOI-based URL to the publication
- * - volume: Journal volume number
- * - year: Publication year
+ * Data Format: 
+ * - Top-level: A single array assigned to the `bibEntries` variable (required by SurVis)
+ * - Each element: A publication object containing a mandatory `key` field (AuthorLastNameYear)
+ * - Core Fields: author, title, journal/booktitle, year, doi, pages, publisher, etc.
+ * 
+ * Supported Publication Types:
+ * - "article": Journal/conference magazine papers
+ * - "inproceedings": Conference proceedings papers
  */
-const generatedBibEntries = {
-    // Article: Novel anomaly detection system for intra-vehicular networks
-    "Agrawal2022": {
+const bibEntries = [
+    {
+        "key": "Agrawal2022",
         "abstract": "",
         "author": "Agrawal, Kushagra and Alladi, Tejasvi and Agrawal, Ayush and Chamola, Vinay and Benslimane, Abderrahim",
         "doi": "10.1109/tits.2022.3146024",
@@ -43,8 +30,8 @@ const generatedBibEntries = {
         "volume": "23",
         "year": "2022"
     },
-    // Article: Deep learning-based IDS for Internet of Vehicles
-    "Ahmed2023": {
+    {
+        "key": "Ahmed2023",
         "abstract": "",
         "author": "Ahmed, Imran and Jeon, Gwanggil and Ahmad, Awais",
         "doi": "10.1109/mce.2021.3139170",
@@ -61,8 +48,8 @@ const generatedBibEntries = {
         "volume": "12",
         "year": "2023"
     },
-    // Article: Review of IDS for intra-vehicle networks
-    "AlJarrah2019": {
+    {
+        "key": "AlJarrah2019",
         "abstract": "",
         "author": "Al-Jarrah, Omar Y. and Maple, Carsten and Dianati, Mehrdad and Oxtoby, David and Mouzakitis, Alex",
         "doi": "10.1109/access.2019.2894183",
@@ -77,8 +64,8 @@ const generatedBibEntries = {
         "volume": "7",
         "year": "2019"
     },
-    // Article: Unknown cyber-attack detection for intra-vehicle networks
-    "AlJarrah2023": {
+    {
+        "key": "AlJarrah2023",
         "abstract": "",
         "author": "Al-Jarrah, Omar Y. and Haloui, Karim El and Dianati, Mehrdad and Maple, Carsten",
         "doi": "10.1109/ojvt.2023.3237802",
@@ -93,8 +80,8 @@ const generatedBibEntries = {
         "volume": "4",
         "year": "2023"
     },
-    // Article: Deep learning for autonomous vehicle attack detection
-    "Aldhyani2022": {
+    {
+        "key": "Aldhyani2022",
         "abstract": "",
         "author": "Aldhyani, Theyazn H. H. and Alkahtani, Hasan",
         "doi": "10.3390/s22010360",
@@ -111,8 +98,8 @@ const generatedBibEntries = {
         "volume": "22",
         "year": "2022"
     },
-    // Inproceedings: SOME/IP IDS with deep learning sequential models (Automotive Ethernet)
-    "Alkhatib2021": {
+    {
+        "key": "Alkhatib2021",
         "abstract": "",
         "author": "Alkhatib, Natasha and Ghauch, Hadi and Danger, Jean-Luc",
         "booktitle": "2021 IEEE 12th Annual Information Technology, Electronics and Mobile Communication Conference (IEMCON)",
@@ -126,8 +113,8 @@ const generatedBibEntries = {
         "url": "http://dx.doi.org/10.1109/IEMCON53756.2021.9623129",
         "year": "2021"
     },
-    // Inproceedings: Unsupervised IDS for AVTP (Automotive Ethernet)
-    "Alkhatib2022": {
+    {
+        "key": "Alkhatib2022",
         "abstract": "",
         "author": "Alkhatib, Natasha and Mushtaq, Maria and Ghauch, Hadi and Danger, Jean-Luc",
         "booktitle": "2022 IEEE Intelligent Vehicles Symposium (IV)",
@@ -141,8 +128,8 @@ const generatedBibEntries = {
         "url": "http://dx.doi.org/10.1109/IV51971.2022.9827285",
         "year": "2022"
     },
-    // Article: Deep learning-based IDS for in-vehicle networks
-    "Alqahtani2022": {
+    {
+        "key": "Alqahtani2022",
         "abstract": "",
         "author": "Alqahtani, Hamed and Kumar, Gulshan",
         "doi": "10.1016/j.compeleceng.2022.108447",
@@ -158,8 +145,8 @@ const generatedBibEntries = {
         "volume": "104",
         "year": "2022"
     },
-    // Article: LSTM autoencoder for ITS anomaly detection
-    "Ashraf2021": {
+    {
+        "key": "Ashraf2021",
         "abstract": "",
         "author": "Ashraf, Javed and Bakhshi, Asim D. and Moustafa, Nour and Khurshid, Hasnat and Javed, Abdullah and Beheshti, Amin",
         "doi": "10.1109/tits.2020.3017882",
@@ -176,8 +163,8 @@ const generatedBibEntries = {
         "volume": "22",
         "year": "2021"
     },
-    // Article: ML-based cyberattack detection for electric vehicles' CAN bus
-    "Avatefipour2019": {
+    {
+        "key": "Avatefipour2019",
         "abstract": "",
         "author": "Avatefipour, Omid and Al-Sumaiti, Ameena Saad and El-Sherbeeny, Ahmed M. and Awwad, Emad Mahrous and Elmeligy, Mohammed A. and Mohamed, Mohamed A. and Malik, Hafiz",
         "doi": "10.1109/access.2019.2937576",
@@ -192,8 +179,8 @@ const generatedBibEntries = {
         "volume": "7",
         "year": "2019"
     },
-    // Article: DESC-IDS: Real-time automotive IDS with deep evolving stream clustering
-    "Cheng2023": {
+    {
+        "key": "Cheng2023",
         "abstract": "",
         "author": "Cheng, Pengzhou and Han, Mu and Liu, Gongshen",
         "doi": "10.1016/j.future.2022.10.020",
@@ -203,14 +190,14 @@ const generatedBibEntries = {
         "pages": "266-281",
         "publisher": "Elsevier BV",
         "series": "",
-        "title": "DESC-IDS: Towards an efficient real-time automotive intrusion detection system based on deep evolving stream clustering",
+        "title": "DESc-IDS: Towards an efficient real-time automotive intrusion detection system based on deep evolving stream clustering",
         "type": "article",
         "url": "http://dx.doi.org/10.1016/j.future.2022.10.020",
         "volume": "140",
         "year": "2023"
     },
-    // Article: Unsupervised anomaly detection for CAN sensor time series
-    "Cherdo2023": {
+    {
+        "key": "Cherdo2023",
         "abstract": "",
         "author": "Cherdo, Yann and Miramond, Benoit and Pegatoquet, Alain and Vallauri, Alain",
         "doi": "10.3390/s23115013",
@@ -227,8 +214,8 @@ const generatedBibEntries = {
         "volume": "23",
         "year": "2023"
     },
-    // Article: Deep learning framework for CAN bus attack detection
-    "Cuzzocrea2020": {
+    {
+        "key": "Cuzzocrea2020",
         "abstract": "",
         "author": "Cuzzocrea, Alfredo and Mercaldo, Francesco and Martinelli, Fabio",
         "doi": "10.1016/j.procs.2020.09.203",
@@ -243,8 +230,8 @@ const generatedBibEntries = {
         "volume": "176",
         "year": "2020"
     },
-    // Article: LSTM for in-vehicle IDS (reverse-engineered automotive packets)
-    "Desta2020a": {
+    {
+        "key": "Desta2020a",
         "abstract": "",
         "author": "Desta, Araya Kibrom and Ohira, Shuji and Arai, Ismail and Fujikawa, Kazutoshi",
         "doi": "10.2197/ipsjjip.28.611",
@@ -260,8 +247,8 @@ const generatedBibEntries = {
         "volume": "28",
         "year": "2020"
     },
-    // Inproceedings: MLIDS - LSTM for raw CAN bus data intrusion detection
-    "Desta2020b": {
+    {
+        "key": "Desta2020b",
         "abstract": "",
         "author": "Desta, Araya Kibrom and Ohira, Shuji and Arai, Ismail and Fujikawa, Kazutoshi",
         "booktitle": "2020 30th International Telecommunication Networks and Applications Conference (ITNAC)",
@@ -275,8 +262,8 @@ const generatedBibEntries = {
         "url": "http://dx.doi.org/10.1109/ITNAC50341.2020.9315024",
         "year": "2020"
     },
-    // Article: Rec-CNN - CNN with recurrence plots for in-vehicle IDS
-    "Desta2022": {
+    {
+        "key": "Desta2022",
         "abstract": "",
         "author": "Desta, Araya Kibrom and Ohira, Shuji and Arai, Ismail and Fujikawa, Kazutoshi",
         "doi": "10.1016/j.vehcom.2022.100470",
@@ -292,8 +279,8 @@ const generatedBibEntries = {
         "volume": "35",
         "year": "2022"
     },
-    // Article: Survey of AI-based anomaly detection in autonomous electric vehicles
-    "Dixit2022": {
+    {
+        "key": "Dixit2022",
         "abstract": "",
         "author": "Dixit, Palak and Bhattacharya, Pronaya and Tanwar, Sudeep and Gupta, Rajesh",
         "doi": "10.1111/exsy.12754",
@@ -310,8 +297,8 @@ const generatedBibEntries = {
         "volume": "39",
         "year": "2022"
     },
-    // Inproceedings: CAN fuzz testing for automotive cybersecurity test construction
-    "Fowler2019": {
+    {
+        "key": "Fowler2019",
         "abstract": "",
         "author": "Fowler, Daniel S. and Bryans, Jeremy and Cheah, Madeline and Wooderson, Paul and Shaikh, Siraj A.",
         "booktitle": "2019 IEEE 19th International Conference on Software Quality, Reliability and Security Companion (QRS-C)",
@@ -325,8 +312,8 @@ const generatedBibEntries = {
         "url": "http://dx.doi.org/10.1109/QRS-C.2019.00015",
         "year": "2019"
     },
-    // Article: PPM-InVIDS - Privacy protection for in-vehicle IDS (complex-valued NN)
-    "Han2021": {
+    {
+        "key": "Han2021",
         "abstract": "",
         "author": "Han, Mu and Cheng, Pengzhou and Ma, Shidian",
         "doi": "10.1016/j.vehcom.2021.100374",
@@ -342,8 +329,8 @@ const generatedBibEntries = {
         "volume": "31",
         "year": "2021"
     },
-    // Article: TOW-IDS - IDS with three overlapped wavelets (Automotive Ethernet)
-    "Han2023": {
+    {
+        "key": "Han2023",
         "abstract": "",
         "author": "Han, Mee Lan and Kwak, Byung Il and Kim, Huy Kang",
         "doi": "10.1109/tifs.2022.3221893",
@@ -358,10 +345,4 @@ const generatedBibEntries = {
         "volume": "18",
         "year": "2023"
     }
-};
-
-// Optional: Export for Node.js (CommonJS) - uncomment to use in other modules
-// module.exports = generatedBibEntries;
-
-// Optional: Export for browser (ES6) - uncomment to use in frontend projects
-// export default generatedBibEntries;
+];
