@@ -3,16 +3,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Literature Visualization</title>
+    <title>Intra-Vehicle Network IDS Literature</title>
 
+    <!-- 核心依赖（必须放在最前面） -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+
+    <!-- 样式文件（正确路径） -->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/entries.css">
     <link rel="stylesheet" href="styles/selector.css">
     <link rel="stylesheet" href="styles/timeline.css">
     <link rel="stylesheet" href="styles/sparkline.css">
+    <link rel="stylesheet" href="styles/tooltipster/tooltipster.css">
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <!-- 第三方库 -->
     <script src="js/lib/bibtex_js.js"></script>
     <script src="js/lib/figue.js"></script>
     <script src="js/lib/FileSaver.js"></script>
@@ -23,6 +28,7 @@
     <div id="visualization"></div>
     <div id="entries"></div>
 
+    <!-- 核心脚本（顺序绝对不能变） -->
     <script src="properties.js"></script>
     <script src="js/util.js"></script>
     <script src="js/warnings.js"></script>
@@ -35,10 +41,12 @@
     <script src="js/page.js"></script>
     <script src="js/selectors.js"></script>
 
+    <!-- 数据文件（100%匹配你的仓库路径） -->
     <script src="js/bib.js"></script>
-    <script src="data/available_pdf.js"></script>
-    <script src="data/available_img.js"></script>
+    <script src="data/generated/available_pdf.js"></script>
+    <script src="data/generated/available_img.js"></script>
 
+    <!-- 启动入口 -->
     <script src="js/survis.js"></script>
 </body>
 </html>
