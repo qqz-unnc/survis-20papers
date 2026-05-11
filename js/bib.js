@@ -3,12 +3,12 @@
  * This file is strictly formatted for compatibility with SurVis visualization tool
  * 
  * Format Requirements:
- * 1. Variable name MUST be "bibEntries" (required by SurVis core code)
+ * 1. Variable name MUST be "generatedBibEntries" (required by SurVis core code)
  * 2. Data structure MUST be an array of objects
  * 3. Each object MUST contain a unique "key" field
  * 4. Standard BibTeX fields are supported (author, title, year, doi, etc.)
  */
-const bibEntries = [
+const generatedBibEntries = [
     {
         "key": "Agrawal2022",
         "abstract": "",
