@@ -1,4 +1,31 @@
-﻿const generatedBibEntries = {
+/**
+ * Generated BibTeX entries for academic references related to in-vehicle network security
+ * This file contains structured bibliographic data for publications focused on:
+ * - Intrusion Detection Systems (IDS) for automotive networks (CAN bus/Ethernet)
+ * - Cybersecurity of autonomous/electric vehicles
+ * - Machine/deep learning for automotive anomaly/cyberattack detection
+ * 
+ * Entry Key Format: AuthorLastNameYear (e.g., Agrawal2022 = Agrawal et al., 2022)
+ * Core Field Definitions:
+ * - abstract: Publication abstract (empty in this dataset)
+ * - author: Authors in "Last, First and Last, First" format
+ * - doi: Digital Object Identifier (persistent link to the publication)
+ * - issn: International Standard Serial Number (journal/proceedings identifier)
+ * - journal: Journal name (for "article" type entries)
+ * - booktitle: Conference proceedings title (for "inproceedings" type entries)
+ * - month: Publication month (abbreviated/full name)
+ * - number: Journal issue number
+ * - pages: Page range of the publication
+ * - publisher: Publisher of the journal/conference
+ * - series: Publication series (empty for most entries here)
+ * - title: Publication title
+ * - type: Publication type (article = journal article; inproceedings = conference paper)
+ * - url: DOI-based URL to the publication
+ * - volume: Journal volume number
+ * - year: Publication year
+ */
+const generatedBibEntries = {
+    // Article: Novel anomaly detection system for intra-vehicular networks
     "Agrawal2022": {
         "abstract": "",
         "author": "Agrawal, Kushagra and Alladi, Tejasvi and Agrawal, Ayush and Chamola, Vinay and Benslimane, Abderrahim",
@@ -16,6 +43,7 @@
         "volume": "23",
         "year": "2022"
     },
+    // Article: Deep learning-based IDS for Internet of Vehicles
     "Ahmed2023": {
         "abstract": "",
         "author": "Ahmed, Imran and Jeon, Gwanggil and Ahmad, Awais",
@@ -33,6 +61,7 @@
         "volume": "12",
         "year": "2023"
     },
+    // Article: Review of IDS for intra-vehicle networks
     "AlJarrah2019": {
         "abstract": "",
         "author": "Al-Jarrah, Omar Y. and Maple, Carsten and Dianati, Mehrdad and Oxtoby, David and Mouzakitis, Alex",
@@ -48,6 +77,7 @@
         "volume": "7",
         "year": "2019"
     },
+    // Article: Unknown cyber-attack detection for intra-vehicle networks
     "AlJarrah2023": {
         "abstract": "",
         "author": "Al-Jarrah, Omar Y. and Haloui, Karim El and Dianati, Mehrdad and Maple, Carsten",
@@ -63,6 +93,7 @@
         "volume": "4",
         "year": "2023"
     },
+    // Article: Deep learning for autonomous vehicle attack detection
     "Aldhyani2022": {
         "abstract": "",
         "author": "Aldhyani, Theyazn H. H. and Alkahtani, Hasan",
@@ -80,6 +111,7 @@
         "volume": "22",
         "year": "2022"
     },
+    // Inproceedings: SOME/IP IDS with deep learning sequential models (Automotive Ethernet)
     "Alkhatib2021": {
         "abstract": "",
         "author": "Alkhatib, Natasha and Ghauch, Hadi and Danger, Jean-Luc",
@@ -94,6 +126,7 @@
         "url": "http://dx.doi.org/10.1109/IEMCON53756.2021.9623129",
         "year": "2021"
     },
+    // Inproceedings: Unsupervised IDS for AVTP (Automotive Ethernet)
     "Alkhatib2022": {
         "abstract": "",
         "author": "Alkhatib, Natasha and Mushtaq, Maria and Ghauch, Hadi and Danger, Jean-Luc",
@@ -108,6 +141,7 @@
         "url": "http://dx.doi.org/10.1109/IV51971.2022.9827285",
         "year": "2022"
     },
+    // Article: Deep learning-based IDS for in-vehicle networks
     "Alqahtani2022": {
         "abstract": "",
         "author": "Alqahtani, Hamed and Kumar, Gulshan",
@@ -124,6 +158,7 @@
         "volume": "104",
         "year": "2022"
     },
+    // Article: LSTM autoencoder for ITS anomaly detection
     "Ashraf2021": {
         "abstract": "",
         "author": "Ashraf, Javed and Bakhshi, Asim D. and Moustafa, Nour and Khurshid, Hasnat and Javed, Abdullah and Beheshti, Amin",
@@ -141,6 +176,7 @@
         "volume": "22",
         "year": "2021"
     },
+    // Article: ML-based cyberattack detection for electric vehicles' CAN bus
     "Avatefipour2019": {
         "abstract": "",
         "author": "Avatefipour, Omid and Al-Sumaiti, Ameena Saad and El-Sherbeeny, Ahmed M. and Awwad, Emad Mahrous and Elmeligy, Mohammed A. and Mohamed, Mohamed A. and Malik, Hafiz",
@@ -150,12 +186,13 @@
         "pages": "127580-127592",
         "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
         "series": "",
-        "title": "An Intelligent Secured Framework for Cyberattack Detection in Electric Vehicles\u2019 CAN Bus Using Machine Learning",
+        "title": "An Intelligent Secured Framework for Cyberattack Detection in Electric Vehicles' CAN Bus Using Machine Learning",
         "type": "article",
         "url": "http://dx.doi.org/10.1109/ACCESS.2019.2937576",
         "volume": "7",
         "year": "2019"
     },
+    // Article: DESC-IDS: Real-time automotive IDS with deep evolving stream clustering
     "Cheng2023": {
         "abstract": "",
         "author": "Cheng, Pengzhou and Han, Mu and Liu, Gongshen",
@@ -172,6 +209,7 @@
         "volume": "140",
         "year": "2023"
     },
+    // Article: Unsupervised anomaly detection for CAN sensor time series
     "Cherdo2023": {
         "abstract": "",
         "author": "Cherdo, Yann and Miramond, Benoit and Pegatoquet, Alain and Vallauri, Alain",
@@ -189,6 +227,7 @@
         "volume": "23",
         "year": "2023"
     },
+    // Article: Deep learning framework for CAN bus attack detection
     "Cuzzocrea2020": {
         "abstract": "",
         "author": "Cuzzocrea, Alfredo and Mercaldo, Francesco and Martinelli, Fabio",
@@ -204,6 +243,7 @@
         "volume": "176",
         "year": "2020"
     },
+    // Article: LSTM for in-vehicle IDS (reverse-engineered automotive packets)
     "Desta2020a": {
         "abstract": "",
         "author": "Desta, Araya Kibrom and Ohira, Shuji and Arai, Ismail and Fujikawa, Kazutoshi",
@@ -220,6 +260,7 @@
         "volume": "28",
         "year": "2020"
     },
+    // Inproceedings: MLIDS - LSTM for raw CAN bus data intrusion detection
     "Desta2020b": {
         "abstract": "",
         "author": "Desta, Araya Kibrom and Ohira, Shuji and Arai, Ismail and Fujikawa, Kazutoshi",
@@ -234,6 +275,7 @@
         "url": "http://dx.doi.org/10.1109/ITNAC50341.2020.9315024",
         "year": "2020"
     },
+    // Article: Rec-CNN - CNN with recurrence plots for in-vehicle IDS
     "Desta2022": {
         "abstract": "",
         "author": "Desta, Araya Kibrom and Ohira, Shuji and Arai, Ismail and Fujikawa, Kazutoshi",
@@ -250,6 +292,7 @@
         "volume": "35",
         "year": "2022"
     },
+    // Article: Survey of AI-based anomaly detection in autonomous electric vehicles
     "Dixit2022": {
         "abstract": "",
         "author": "Dixit, Palak and Bhattacharya, Pronaya and Tanwar, Sudeep and Gupta, Rajesh",
@@ -267,6 +310,7 @@
         "volume": "39",
         "year": "2022"
     },
+    // Inproceedings: CAN fuzz testing for automotive cybersecurity test construction
     "Fowler2019": {
         "abstract": "",
         "author": "Fowler, Daniel S. and Bryans, Jeremy and Cheah, Madeline and Wooderson, Paul and Shaikh, Siraj A.",
@@ -281,6 +325,7 @@
         "url": "http://dx.doi.org/10.1109/QRS-C.2019.00015",
         "year": "2019"
     },
+    // Article: PPM-InVIDS - Privacy protection for in-vehicle IDS (complex-valued NN)
     "Han2021": {
         "abstract": "",
         "author": "Han, Mu and Cheng, Pengzhou and Ma, Shidian",
@@ -297,6 +342,7 @@
         "volume": "31",
         "year": "2021"
     },
+    // Article: TOW-IDS - IDS with three overlapped wavelets (Automotive Ethernet)
     "Han2023": {
         "abstract": "",
         "author": "Han, Mee Lan and Kwak, Byung Il and Kim, Huy Kang",
@@ -313,3 +359,9 @@
         "year": "2023"
     }
 };
+
+// Optional: Export for Node.js (CommonJS) - uncomment to use in other modules
+// module.exports = generatedBibEntries;
+
+// Optional: Export for browser (ES6) - uncomment to use in frontend projects
+// export default generatedBibEntries;
