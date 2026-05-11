@@ -1,19 +1,5 @@
-/**
- * Generated BibTeX entries for academic references related to in-vehicle network security
- * This file is structured to be fully compatible with the SurVis visualization tool.
- * 
- * Data Format: 
- * - Top-level: A single array assigned to the `bibEntries` variable (required by SurVis)
- * - Each element: A publication object containing a mandatory `key` field (AuthorLastNameYear)
- * - Core Fields: author, title, journal/booktitle, year, doi, pages, publisher, etc.
- * 
- * Supported Publication Types:
- * - "article": Journal/conference magazine papers
- * - "inproceedings": Conference proceedings papers
- */
-const bibEntries = [
-    {
-        "key": "Agrawal2022",
+const generatedBibEntries = {
+    "Agrawal2022": {
         "abstract": "",
         "author": "Agrawal, Kushagra and Alladi, Tejasvi and Agrawal, Ayush and Chamola, Vinay and Benslimane, Abderrahim",
         "doi": "10.1109/tits.2022.3146024",
@@ -30,8 +16,7 @@ const bibEntries = [
         "volume": "23",
         "year": "2022"
     },
-    {
-        "key": "Ahmed2023",
+    "Ahmed2023": {
         "abstract": "",
         "author": "Ahmed, Imran and Jeon, Gwanggil and Ahmad, Awais",
         "doi": "10.1109/mce.2021.3139170",
@@ -48,8 +33,7 @@ const bibEntries = [
         "volume": "12",
         "year": "2023"
     },
-    {
-        "key": "AlJarrah2019",
+    "AlJarrah2019": {
         "abstract": "",
         "author": "Al-Jarrah, Omar Y. and Maple, Carsten and Dianati, Mehrdad and Oxtoby, David and Mouzakitis, Alex",
         "doi": "10.1109/access.2019.2894183",
@@ -64,8 +48,7 @@ const bibEntries = [
         "volume": "7",
         "year": "2019"
     },
-    {
-        "key": "AlJarrah2023",
+    "AlJarrah2023": {
         "abstract": "",
         "author": "Al-Jarrah, Omar Y. and Haloui, Karim El and Dianati, Mehrdad and Maple, Carsten",
         "doi": "10.1109/ojvt.2023.3237802",
@@ -80,8 +63,7 @@ const bibEntries = [
         "volume": "4",
         "year": "2023"
     },
-    {
-        "key": "Aldhyani2022",
+    "Aldhyani2022": {
         "abstract": "",
         "author": "Aldhyani, Theyazn H. H. and Alkahtani, Hasan",
         "doi": "10.3390/s22010360",
@@ -98,8 +80,7 @@ const bibEntries = [
         "volume": "22",
         "year": "2022"
     },
-    {
-        "key": "Alkhatib2021",
+    "Alkhatib2021": {
         "abstract": "",
         "author": "Alkhatib, Natasha and Ghauch, Hadi and Danger, Jean-Luc",
         "booktitle": "2021 IEEE 12th Annual Information Technology, Electronics and Mobile Communication Conference (IEMCON)",
@@ -113,8 +94,7 @@ const bibEntries = [
         "url": "http://dx.doi.org/10.1109/IEMCON53756.2021.9623129",
         "year": "2021"
     },
-    {
-        "key": "Alkhatib2022",
+    "Alkhatib2022": {
         "abstract": "",
         "author": "Alkhatib, Natasha and Mushtaq, Maria and Ghauch, Hadi and Danger, Jean-Luc",
         "booktitle": "2022 IEEE Intelligent Vehicles Symposium (IV)",
@@ -128,8 +108,7 @@ const bibEntries = [
         "url": "http://dx.doi.org/10.1109/IV51971.2022.9827285",
         "year": "2022"
     },
-    {
-        "key": "Alqahtani2022",
+    "Alqahtani2022": {
         "abstract": "",
         "author": "Alqahtani, Hamed and Kumar, Gulshan",
         "doi": "10.1016/j.compeleceng.2022.108447",
@@ -145,8 +124,7 @@ const bibEntries = [
         "volume": "104",
         "year": "2022"
     },
-    {
-        "key": "Ashraf2021",
+    "Ashraf2021": {
         "abstract": "",
         "author": "Ashraf, Javed and Bakhshi, Asim D. and Moustafa, Nour and Khurshid, Hasnat and Javed, Abdullah and Beheshti, Amin",
         "doi": "10.1109/tits.2020.3017882",
@@ -163,8 +141,7 @@ const bibEntries = [
         "volume": "22",
         "year": "2021"
     },
-    {
-        "key": "Avatefipour2019",
+    "Avatefipour2019": {
         "abstract": "",
         "author": "Avatefipour, Omid and Al-Sumaiti, Ameena Saad and El-Sherbeeny, Ahmed M. and Awwad, Emad Mahrous and Elmeligy, Mohammed A. and Mohamed, Mohamed A. and Malik, Hafiz",
         "doi": "10.1109/access.2019.2937576",
@@ -173,14 +150,13 @@ const bibEntries = [
         "pages": "127580-127592",
         "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
         "series": "",
-        "title": "An Intelligent Secured Framework for Cyberattack Detection in Electric Vehicles' CAN Bus Using Machine Learning",
+        "title": "An Intelligent Secured Framework for Cyberattack Detection in Electric Vehicles\u2019 CAN Bus Using Machine Learning",
         "type": "article",
         "url": "http://dx.doi.org/10.1109/ACCESS.2019.2937576",
         "volume": "7",
         "year": "2019"
     },
-    {
-        "key": "Cheng2023",
+    "Cheng2023": {
         "abstract": "",
         "author": "Cheng, Pengzhou and Han, Mu and Liu, Gongshen",
         "doi": "10.1016/j.future.2022.10.020",
@@ -190,14 +166,13 @@ const bibEntries = [
         "pages": "266-281",
         "publisher": "Elsevier BV",
         "series": "",
-        "title": "DESc-IDS: Towards an efficient real-time automotive intrusion detection system based on deep evolving stream clustering",
+        "title": "DESC-IDS: Towards an efficient real-time automotive intrusion detection system based on deep evolving stream clustering",
         "type": "article",
         "url": "http://dx.doi.org/10.1016/j.future.2022.10.020",
         "volume": "140",
         "year": "2023"
     },
-    {
-        "key": "Cherdo2023",
+    "Cherdo2023": {
         "abstract": "",
         "author": "Cherdo, Yann and Miramond, Benoit and Pegatoquet, Alain and Vallauri, Alain",
         "doi": "10.3390/s23115013",
@@ -214,8 +189,7 @@ const bibEntries = [
         "volume": "23",
         "year": "2023"
     },
-    {
-        "key": "Cuzzocrea2020",
+    "Cuzzocrea2020": {
         "abstract": "",
         "author": "Cuzzocrea, Alfredo and Mercaldo, Francesco and Martinelli, Fabio",
         "doi": "10.1016/j.procs.2020.09.203",
@@ -230,8 +204,7 @@ const bibEntries = [
         "volume": "176",
         "year": "2020"
     },
-    {
-        "key": "Desta2020a",
+    "Desta2020a": {
         "abstract": "",
         "author": "Desta, Araya Kibrom and Ohira, Shuji and Arai, Ismail and Fujikawa, Kazutoshi",
         "doi": "10.2197/ipsjjip.28.611",
@@ -247,8 +220,7 @@ const bibEntries = [
         "volume": "28",
         "year": "2020"
     },
-    {
-        "key": "Desta2020b",
+    "Desta2020b": {
         "abstract": "",
         "author": "Desta, Araya Kibrom and Ohira, Shuji and Arai, Ismail and Fujikawa, Kazutoshi",
         "booktitle": "2020 30th International Telecommunication Networks and Applications Conference (ITNAC)",
@@ -262,8 +234,7 @@ const bibEntries = [
         "url": "http://dx.doi.org/10.1109/ITNAC50341.2020.9315024",
         "year": "2020"
     },
-    {
-        "key": "Desta2022",
+    "Desta2022": {
         "abstract": "",
         "author": "Desta, Araya Kibrom and Ohira, Shuji and Arai, Ismail and Fujikawa, Kazutoshi",
         "doi": "10.1016/j.vehcom.2022.100470",
@@ -279,8 +250,7 @@ const bibEntries = [
         "volume": "35",
         "year": "2022"
     },
-    {
-        "key": "Dixit2022",
+    "Dixit2022": {
         "abstract": "",
         "author": "Dixit, Palak and Bhattacharya, Pronaya and Tanwar, Sudeep and Gupta, Rajesh",
         "doi": "10.1111/exsy.12754",
@@ -297,8 +267,7 @@ const bibEntries = [
         "volume": "39",
         "year": "2022"
     },
-    {
-        "key": "Fowler2019",
+    "Fowler2019": {
         "abstract": "",
         "author": "Fowler, Daniel S. and Bryans, Jeremy and Cheah, Madeline and Wooderson, Paul and Shaikh, Siraj A.",
         "booktitle": "2019 IEEE 19th International Conference on Software Quality, Reliability and Security Companion (QRS-C)",
@@ -312,8 +281,7 @@ const bibEntries = [
         "url": "http://dx.doi.org/10.1109/QRS-C.2019.00015",
         "year": "2019"
     },
-    {
-        "key": "Han2021",
+    "Han2021": {
         "abstract": "",
         "author": "Han, Mu and Cheng, Pengzhou and Ma, Shidian",
         "doi": "10.1016/j.vehcom.2021.100374",
@@ -329,8 +297,7 @@ const bibEntries = [
         "volume": "31",
         "year": "2021"
     },
-    {
-        "key": "Han2023",
+    "Han2023": {
         "abstract": "",
         "author": "Han, Mee Lan and Kwak, Byung Il and Kim, Huy Kang",
         "doi": "10.1109/tifs.2022.3221893",
@@ -345,4 +312,4 @@ const bibEntries = [
         "volume": "18",
         "year": "2023"
     }
-];
+};
