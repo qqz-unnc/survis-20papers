@@ -12,9 +12,10 @@ var generatedBibEntries = {
     "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
     "title": "NovelADS: A Novel Anomaly Detection System for Intra-Vehicular Networks",
     "type": "article",
-    "url": "http://dx.doi.org/10.1109/tits.2022.3146024",
+    "url": "http://dx.doi.org/10.1109/TITS.2022.3146024",
     "volume": "23",
-    "year": "2022"
+    "year": 2022,
+    "keywords": []
   },
   "Ahmed2023": {
     "key": "Ahmed2023",
@@ -25,13 +26,14 @@ var generatedBibEntries = {
     "journal": "IEEE Consumer Electronics Magazine",
     "month": "Jan",
     "number": "1",
-    "pages": "1-1",
+    "pages": "117-123",
     "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
     "title": "Deep Learning-Based Intrusion Detection System for Internet of Vehicles",
     "type": "article",
-    "url": "http://dx.doi.org/10.1109/mce.2021.3139170",
+    "url": "http://dx.doi.org/10.1109/MCE.2021.3139170",
     "volume": "12",
-    "year": "2023"
+    "year": 2023,
+    "keywords": []
   },
   "AlJarrah2019": {
     "key": "AlJarrah2019",
@@ -40,15 +42,14 @@ var generatedBibEntries = {
     "doi": "10.1109/access.2019.2894183",
     "issn": "2169-3536",
     "journal": "IEEE Access",
-    "month": "Jan",
-    "number": "",
-    "pages": "1-1",
+    "pages": "21266-21289",
     "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
     "title": "Intrusion Detection Systems for Intra-Vehicle Networks: A Review",
     "type": "article",
-    "url": "http://dx.doi.org/10.1109/access.2019.2894183",
+    "url": "http://dx.doi.org/10.1109/ACCESS.2019.2894183",
     "volume": "7",
-    "year": "2019"
+    "year": 2019,
+    "keywords": []
   },
   "AlJarrah2023": {
     "key": "AlJarrah2023",
@@ -57,15 +58,14 @@ var generatedBibEntries = {
     "doi": "10.1109/ojvt.2023.3237802",
     "issn": "2644-1330",
     "journal": "IEEE Open Journal of Vehicular Technology",
-    "month": "Jan",
-    "number": "",
-    "pages": "1-1",
+    "pages": "271-280",
     "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
     "title": "A Novel Detection Approach of Unknown Cyber-Attacks for Intra-Vehicle Networks Using Recurrence Plots and Neural Networks",
     "type": "article",
-    "url": "http://dx.doi.org/10.1109/ojvt.2023.3237802",
+    "url": "http://dx.doi.org/10.1109/OJVT.2023.3237802",
     "volume": "4",
-    "year": "2023"
+    "year": 2023,
+    "keywords": []
   },
   "Aldhyani2022": {
     "key": "Aldhyani2022",
@@ -82,7 +82,8 @@ var generatedBibEntries = {
     "type": "article",
     "url": "http://dx.doi.org/10.3390/s22010360",
     "volume": "22",
-    "year": "2022"
+    "year": 2022,
+    "keywords": []
   },
   "Alkhatib2021": {
     "key": "Alkhatib2021",
@@ -96,7 +97,8 @@ var generatedBibEntries = {
     "title": "SOME/IP Intrusion Detection using Deep Learning-based Sequential Models in Automotive Ethernet Networks",
     "type": "inproceedings",
     "url": "http://dx.doi.org/10.1109/IEMCON53756.2021.9623129",
-    "year": "2021"
+    "year": 2021,
+    "keywords": []
   },
   "Alkhatib2022": {
     "key": "Alkhatib2022",
@@ -110,7 +112,8 @@ var generatedBibEntries = {
     "title": "Unsupervised Network Intrusion Detection System for AVTP in Automotive Ethernet Networks",
     "type": "inproceedings",
     "url": "http://dx.doi.org/10.1109/IV51971.2022.9827285",
-    "year": "2022"
+    "year": 2022,
+    "keywords": []
   },
   "Alqahtani2022": {
     "key": "Alqahtani2022",
@@ -125,8 +128,9 @@ var generatedBibEntries = {
     "title": "A deep learning-based intrusion detection system for in-vehicle networks",
     "type": "article",
     "url": "http://dx.doi.org/10.1016/j.compeleceng.2022.108447",
-    "volume": "102",
-    "year": "2022"
+    "volume": "104",
+    "year": 2022,
+    "keywords": []
   },
   "Ashraf2021": {
     "key": "Ashraf2021",
@@ -143,7 +147,8 @@ var generatedBibEntries = {
     "type": "article",
     "url": "http://dx.doi.org/10.1109/TITS.2020.3017882",
     "volume": "22",
-    "year": "2021"
+    "year": 2021,
+    "keywords": []
   },
   "Avatefipour2019": {
     "key": "Avatefipour2019",
@@ -152,15 +157,14 @@ var generatedBibEntries = {
     "doi": "10.1109/access.2019.2937576",
     "issn": "2169-3536",
     "journal": "IEEE Access",
-    "month": "Jan",
-    "number": "",
     "pages": "127580-127592",
     "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
     "title": "An Intelligent Secured Framework for Cyberattack Detection in Electric Vehicles' CAN Bus Using Machine Learning",
     "type": "article",
     "url": "http://dx.doi.org/10.1109/ACCESS.2019.2937576",
     "volume": "7",
-    "year": "2019"
+    "year": 2019,
+    "keywords": []
   },
   "Cheng2023": {
     "key": "Cheng2023",
@@ -176,7 +180,8 @@ var generatedBibEntries = {
     "type": "article",
     "url": "http://dx.doi.org/10.1016/j.future.2022.10.020",
     "volume": "140",
-    "year": "2023"
+    "year": 2023,
+    "keywords": []
   },
   "Cherdo2023": {
     "key": "Cherdo2023",
@@ -193,7 +198,8 @@ var generatedBibEntries = {
     "type": "article",
     "url": "http://dx.doi.org/10.3390/s23115013",
     "volume": "23",
-    "year": "2023"
+    "year": 2023,
+    "keywords": []
   },
   "Cuzzocrea2020": {
     "key": "Cuzzocrea2020",
@@ -208,7 +214,8 @@ var generatedBibEntries = {
     "type": "article",
     "url": "http://dx.doi.org/10.1016/j.procs.2020.09.203",
     "volume": "176",
-    "year": "2020"
+    "year": 2020,
+    "keywords": []
   },
   "Desta2020a": {
     "key": "Desta2020a",
@@ -224,7 +231,8 @@ var generatedBibEntries = {
     "type": "article",
     "url": "http://dx.doi.org/10.2197/ipsjjip.28.611",
     "volume": "28",
-    "year": "2020"
+    "year": 2020,
+    "keywords": []
   },
   "Desta2020b": {
     "key": "Desta2020b",
@@ -238,7 +246,8 @@ var generatedBibEntries = {
     "title": "MLIDS: Handling Raw High-Dimensional CAN Bus Data Using Long Short-Term Memory Networks for Intrusion Detection in In-Vehicle Networks",
     "type": "inproceedings",
     "url": "http://dx.doi.org/10.1109/ITNAC50341.2020.9315024",
-    "year": "2020"
+    "year": 2020,
+    "keywords": []
   },
   "Desta2022": {
     "key": "Desta2022",
@@ -254,7 +263,8 @@ var generatedBibEntries = {
     "type": "article",
     "url": "http://dx.doi.org/10.1016/j.vehcom.2022.100470",
     "volume": "35",
-    "year": "2022"
+    "year": 2022,
+    "keywords": []
   },
   "Dixit2022": {
     "key": "Dixit2022",
@@ -271,7 +281,8 @@ var generatedBibEntries = {
     "type": "article",
     "url": "http://dx.doi.org/10.1111/exsy.12754",
     "volume": "39",
-    "year": "2022"
+    "year": 2022,
+    "keywords": []
   },
   "Fowler2019": {
     "key": "Fowler2019",
@@ -285,7 +296,8 @@ var generatedBibEntries = {
     "title": "A Method for Constructing Automotive Cybersecurity Tests, a CAN Fuzz Testing Example",
     "type": "inproceedings",
     "url": "http://dx.doi.org/10.1109/QRS-C.2019.00015",
-    "year": "2019"
+    "year": 2019,
+    "keywords": []
   },
   "Han2021": {
     "key": "Han2021",
@@ -301,7 +313,8 @@ var generatedBibEntries = {
     "type": "article",
     "url": "http://dx.doi.org/10.1016/j.vehcom.2021.100374",
     "volume": "31",
-    "year": "2021"
+    "year": 2021,
+    "keywords": []
   },
   "Han2023": {
     "key": "Han2023",
@@ -316,6 +329,7 @@ var generatedBibEntries = {
     "type": "article",
     "url": "http://dx.doi.org/10.1109/TIFS.2022.3221893",
     "volume": "18",
-    "year": "2023"
+    "year": 2023,
+    "keywords": []
   }
 };
