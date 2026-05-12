@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intra-Vehicle Network IDS Literature</title>
 
-    <!-- 核心依赖（必须用v3，SurVis只支持v3） -->
+    <!-- 核心依赖（必须用v3） -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://d3js.org/d3.v3.min.js"></script>
 
-    <!-- 样式文件（原版路径） -->
+    <!-- 样式文件 -->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/entries.css">
     <link rel="stylesheet" href="styles/selector.css">
@@ -17,8 +17,7 @@
     <link rel="stylesheet" href="styles/sparkline.css">
     <link rel="stylesheet" href="styles/tooltipster/tooltipster.css">
 
-    <!-- 第三方库 -->
-    <script src="js/lib/bibtex_js.js"></script>
+    <!-- 第三方库（已删除bibtex_js.js，不再需要） -->
     <script src="js/lib/figue.js"></script>
     <script src="js/lib/FileSaver.js"></script>
     <script src="js/lib/jquery.tooltipster.js"></script>
@@ -28,7 +27,7 @@
     <div id="visualization"></div>
     <div id="entries"></div>
 
-    <!-- 严格按照原版顺序加载 -->
+    <!-- 严格按顺序加载 -->
     <script src="properties.js"></script>
     <script src="js/util.js"></script>
     <script src="js/warnings.js"></script>
@@ -41,12 +40,12 @@
     <script src="js/page.js"></script>
     <script src="js/selectors.js"></script>
 
-    <!-- 数据文件（100%匹配你的仓库路径） -->
+    <!-- 数据文件（路径完全正确） -->
     <script src="data/generated/bib.js"></script>
     <script src="data/generated/available_pdf.js"></script>
     <script src="data/generated/available_img.js"></script>
 
-    <!-- 最后启动 -->
+    <!-- 最后启动应用 -->
     <script src="js/survis.js"></script>
 </body>
 </html>
