@@ -1,52 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Intra-Vehicle Network Intrusion Detection System (IDS) Literature Visualization">
+    <meta name="author" content="Literature Visualization Team">
     <title>Intra-Vehicle Network IDS Literature</title>
 
-    <!-- 核心依赖（必须放在最前面） -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <!-- 第三方核心依赖（优先加载） -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
 
-    <!-- 样式文件（正确路径） -->
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/entries.css">
-    <link rel="stylesheet" href="styles/selector.css">
-    <link rel="stylesheet" href="styles/timeline.css">
-    <link rel="stylesheet" href="styles/sparkline.css">
-    <link rel="stylesheet" href="styles/tooltipster/tooltipster.css">
+    <!-- 本地样式文件（按功能分层） -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/entries.css">
+    <link rel="stylesheet" href="./styles/selector.css">
+    <link rel="stylesheet" href="./styles/timeline.css">
+    <link rel="stylesheet" href="./styles/sparkline.css">
+    <link rel="stylesheet" href="./styles/tooltipster/tooltipster.css">
 
-    <!-- 第三方库 -->
-    <script src="js/lib/bibtex_js.js"></script>
-    <script src="js/lib/figue.js"></script>
-    <script src="js/lib/FileSaver.js"></script>
-    <script src="js/lib/jquery.tooltipster.js"></script>
+    <!-- 第三方工具库 -->
+    <script src="./js/lib/bibtex_js.js"></script>
+    <script src="./js/lib/figue.js"></script>
+    <script src="./js/lib/FileSaver.js"></script>
+    <script src="./js/lib/jquery.tooltipster.js"></script>
 </head>
 
 <body>
-    <div id="visualization"></div>
-    <div id="entries"></div>
+    <!-- 语义化主容器 -->
+    <main>
+        <div id="visualization"></div>
+        <div id="entries"></div>
+    </main>
 
-    <!-- 核心脚本（顺序绝对不能变） -->
-    <script src="properties.js"></script>
-    <script src="js/util.js"></script>
-    <script src="js/warnings.js"></script>
-    <script src="js/stats.js"></script>
-    <script src="js/references.js"></script>
-    <script src="js/tags.js"></script>
-    <script src="js/clustering.js"></script>
-    <script src="js/timeline.js"></script>
-    <script src="js/entry_layout.js"></script>
-    <script src="js/page.js"></script>
-    <script src="js/selectors.js"></script>
+    <!-- 无JS提示 -->
+    <noscript>
+        <div style="padding: 20px; text-align: center; background: #f8d7da; color: #721c24; border-radius: 4px;">
+            This page requires JavaScript to be enabled to view the literature visualization.
+        </div>
+    </noscript>
 
-    <!-- 数据文件（100%匹配你的仓库路径） -->
-    <script src="js/bib.js"></script>
-    <script src="data/generated/available_pdf.js"></script>
-    <script src="data/generated/available_img.js"></script>
+    <!-- 核心业务脚本（严格依赖顺序） -->
+    <script src="./properties.js"></script>
+    <script src="./js/util.js"></script>
+    <script src="./js/warnings.js"></script>
+    <script src="./js/stats.js"></script>
+    <script src="./js/references.js"></script>
+    <script src="./js/tags.js"></script>
+    <script src="./js/clustering.js"></script>
+    <script src="./js/timeline.js"></script>
+    <script src="./js/entry_layout.js"></script>
+    <script src="./js/page.js"></script>
+    <script src="./js/selectors.js"></script>
 
-    <!-- 启动入口 -->
-    <script src="js/survis.js"></script>
+    <!-- 数据文件 -->
+    <script src="./js/bib.js"></script>
+    <script src="./data/generated/available_pdf.js"></script>
+    <script src="./data/generated/available_img.js"></script>
+
+    <!-- 应用入口脚本 -->
+    <script src="./js/survis.js"></script>
 </body>
 </html>
