@@ -1,4 +1,4 @@
-var generatedBibEntries = {
+var bibEntries = {
   "Agrawal2022": {
     "key": "Agrawal2022",
     "abstract": "",
